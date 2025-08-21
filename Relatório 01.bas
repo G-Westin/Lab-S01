@@ -1,12 +1,12 @@
 Exercicio 1:
 10 INPUT "Digite a primeira nota: ", N1
 20 INPUT "Digite a segunda nota: ", N2
-30 MEDIA = (N1 + N2) / 2
+30 MEDIA = (VAL(N1) + VAL(N2)) 
 40 IF MEDIA > 60 THEN PRINT "Aprovado direto": END
 50 IF MEDIA < 30 THEN PRINT "Reprovado direto": END
 60 PRINT "Média entre 30 e 60. Será necessário inserir a NP3."
 70 INPUT "Digite a nota da NP3: ", NP3
-80 NOVAMEDIA = (N1 + N2 + NP3) / 3
+80 NOVAMEDIA = (VAL(NP3) + VAL(MEDIA))/2
 90 IF NOVAMEDIA > 50 THEN PRINT "Aprovado pela NP3": END
 100 PRINT "Reprovado na NP3"
 0 END
