@@ -6,25 +6,24 @@ import (
 	"fmt"
 )
 
-// Função que classifica o número
 func classificar_numero(num int) string {
 	if num > 0 {
-		return "Positivo"
+		return "positivo"
 	} else if num < 0 {
-		return "Negativo"
+		return "negativo"
 	} else {
-		return "Zero"
+		return "zero"
 	}
 }
 
 func main() {
 	var numero int
 
-	fmt.Print("Digite um número: ")
+	fmt.Print("digite um numero: ")
 	fmt.Scan(&numero)
 
 	resultado := classificar_numero(numero)
-	fmt.Println("O número é:", resultado)
+	fmt.Println("o numero é:", resultado)
 }
 
 
@@ -98,9 +97,9 @@ func main() {
 	for {
 		var usuario, senha string
 
-		fmt.Print("Digite o usuário: ")
+		fmt.Print("digite o usuario: ")
 		fmt.Scan(&usuario)
-		fmt.Print("Digite a senha: ")
+		fmt.Print("digite a senha: ")
 		fmt.Scan(&senha)
 
 		if verificarLogin(usuario, senha) {
